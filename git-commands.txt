@@ -1,0 +1,236 @@
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~
+$ mkdir monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~
+$ cd monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ git clone https://github.com/medinasheriff/monorepo.git
+Cloning into 'monorepo'...
+warning: You appear to have cloned an empty repository.
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ pwd
+/c/Users/DELL/monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ ls
+monorepo/
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo
+$ cd monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ touch README.md
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ touch LICENSE
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ touch .gitignore
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ git add .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ git commit -m "Initial commit"
+[main (root-commit) 9da737d] Initial commit
+ 3 files changed, 43 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 LICENSE
+ create mode 100644 README.md
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ pwd
+/c/Users/DELL/monorepo/monorepo
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ mkdir backend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ cd backend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/backend (main)
+$ touch .gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/backend (main)
+$ git add .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/backend (main)
+$ git commit -m "add empty backend directory"
+[main fcadb8b] add empty backend directory
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 backend/.gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/backend (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.46 KiB | 746.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/medinasheriff/monorepo.git
+ * [new branch]      main -> main
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/backend (main)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (main)
+$ git checkout -b fontend-layout
+Switched to a new branch 'fontend-layout'
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (fontend-layout)
+$ mkdir frontend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (fontend-layout)
+$ cd frontend
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend (fontend-layout)
+$ mkdir src
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend (fontend-layout)
+$ cd src
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ mkdir components
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ cd components
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src/components (fontend-layout)
+$ touch .gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src/components (fontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ mkdir containers
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ cd containers
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src/containers (fontend-layout)
+$ touch .gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src/containers (fontend-layout)
+$ git add . && git commit -m "chore: add components and containers directory to frontend"
+[fontend-layout d5e050a] chore: add components and containers directory to frontend
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 frontend/src/containers/.gitkeep
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src/containers (fontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ touch index.js
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ git add . && git commit -m "add content dynamically to page via JavaScript"
+[fontend-layout ffbc15e] add content dynamically to page via JavaScript
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 frontend/src/components/.gitkeep
+ create mode 100644 frontend/src/index.js
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ git push origin fronrend-layout
+error: src refspec fronrend-layout does not match any
+error: failed to push some refs to 'https://github.com/medinasheriff/monorepo.git'
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ git push origin frontend-layout
+error: src refspec frontend-layout does not match any
+error: failed to push some refs to 'https://github.com/medinasheriff/monorepo.git'
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ git push origin fontend-layout
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 744 bytes | 248.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'fontend-layout' on GitHub by visiting:
+remote:      https://github.com/medinasheriff/monorepo/pull/new/fontend-layout
+remote:
+To https://github.com/medinasheriff/monorepo.git
+ * [new branch]      fontend-layout -> fontend-layout
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ git merge fontend-layout
+Already up to date.
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/src (fontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend (fontend-layout)
+$ mkdir public
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend (fontend-layout)
+$ cd public
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (fontend-layout)
+$ touch index.html
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (fontend-layout)
+$ git add . && git commit -m "add index.html page"
+[fontend-layout a290e32] add index.html page
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 frontend/public/index.html
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (fontend-layout)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (fontend-layout)
+$ git push origin fontend-layout
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 380 bytes | 190.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/medinasheriff/monorepo.git
+   ffbc15e..a290e32  fontend-layout -> fontend-layout
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (fontend-layout)
+$ cd monorepo.git
+bash: cd: monorepo.git: No such file or directory
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend/public (fontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo/frontend (fontend-layout)
+$ cd ..
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (fontend-layout)
+
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (fontend-layout)
+$ git checkout -b commands
+Switched to a new branch 'commands'
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (commands)
+$ touch git-commands.txt
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (commands)
+$ code .
+
+DELL@DESKTOP-0SUVIT4 MINGW64 ~/monorepo/monorepo (commands)
+$
